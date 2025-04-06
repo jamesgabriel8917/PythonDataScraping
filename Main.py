@@ -42,7 +42,7 @@ def EfetuaConsulta(RowNumRelatorio, RowQtdResutados, RowInfoRelatorio, RowQtdDia
     anoAnt = str(CalculoRetroativo.year)
 
     # LINK TESTE
-    url = "https://0731.fluid.prd.sicredi.cloud/relatorio/visualizar/processo/id/{0}?dt_ini={1}%2F{2}%2F{3}&dt_fim={4}%2F{5}%2F{6}&situacao=0&itens_pagina={7}&go=true".format(
+    url = "https://[...]sso/id/{0}?dt_ini={1}%2F{2}%2F{3}&dt_fim={4}%2F{5}%2F{6}&situacao=0&itens_pagina={7}&go=true".format(
         str(RowNumRelatorio), diaAnt, mesAnt, anoAnt, dia, mes, ano, str(RowQtdResutados))
 
     navegador.get(url=url)
